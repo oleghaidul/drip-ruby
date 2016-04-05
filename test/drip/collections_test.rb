@@ -4,6 +4,7 @@ class Drip::CollectionsTest < Drip::TestCase
   should "find collections" do
     assert_equal Drip::Subscribers, Drip::Collections.find_class("subscribers")
     assert_equal Drip::Accounts, Drip::Collections.find_class("accounts")
+    assert_equal Drip::Campaigns, Drip::Collections.find_class("campaigns")
     assert_equal Drip::Errors, Drip::Collections.find_class("errors")
   end
 

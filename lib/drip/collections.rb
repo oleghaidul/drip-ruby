@@ -1,4 +1,5 @@
 require "drip/collections/accounts"
+require "drip/collections/campaigns"
 require "drip/collections/subscribers"
 require "drip/collections/errors"
 
@@ -7,6 +8,7 @@ module Drip
     def self.classes
       [
         Drip::Accounts,
+        Drip::Campaigns,
         Drip::Subscribers,
         Drip::Errors
       ]

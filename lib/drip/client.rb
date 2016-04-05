@@ -1,5 +1,6 @@
 require "drip/response"
 require "drip/client/accounts"
+require "drip/client/campaigns"
 require "drip/client/subscribers"
 require "drip/client/tags"
 require "drip/client/events"
@@ -10,6 +11,7 @@ require "json"
 module Drip
   class Client
     include Accounts
+    include Campaigns
     include Subscribers
     include Tags
     include Events

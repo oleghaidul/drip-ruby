@@ -3,6 +3,7 @@ require File.dirname(__FILE__) + '/../test_helper.rb'
 class Drip::ResourcesTest < Drip::TestCase
   should "find resources" do
     assert_equal Drip::Subscriber, Drip::Resources.find_class("subscriber")
+    assert_equal Drip::Campaign, Drip::Resources.find_class("campaign")
     assert_equal Drip::Error, Drip::Resources.find_class("error")
   end
 
